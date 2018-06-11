@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Inclass Excercise</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stlesheet" href="css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+#red{
+  background-color:hsla(290,100%,50%,0.3);;
+}
+
+}
+</style>
+  </head>
+  <body>
+<div class="container">
+  <div class="dropdown">
+    <button class="btn-lg btn-danger dropdown-toggle"type="button"data-toggle="dropdown"> Dropdown Menu
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li id="red"><a href="#">Home</a></li>
+    <li id="red"><a href="#">Bootstrap</a></li>
+    <li id="red"><a href="#">JQuery</a></li>
+    <li id="red"><a href="#">JQuery ul</a></li>
+    <li class="divider"></li>
+    <li id="red"><a href="#">PHP</a></li>
+    </ul>
+  </div></div>
+  <br><br><br><br><br><br><br><br><br><br>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> HOME</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-menu-hamburger" ></span> MENUS  <span class="glyphicon glyphicon-plus"></a>
+          <ul class="dropdown-menu stylus-drp-li">
+            <li><a tabindex="-1" href="#">HTML</a></li>
+            <li><a tabindex="-1" href="#">CSS</a></li>
+            <li class="dropdown-submenu">
+              <a class="test" tabindex="-1" href="#">JS <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a tabindex="-1" href="#">JS-1</a></li>
+                <li><a tabindex="-1" href="#">JS-2</a></li>
+                <li class="dropdown-submenu">
+                  <a class="test" href="#">FRONTEND <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">BACKEND</a></li>
+                    <li><a href="#">DATABASE</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+        <script>
+        $(document).ready(function(){
+          $('.dropdown-submenu a.test').on("click", function(e){
+            $(this).next('ul').toggle();
+            e.stopPropagation();
+            e.preventDefault();
+          });
+        });
+        </script></li>
+      </ul>
+
+    </div>
+  </nav>
+  <br><br><br><br><br><br>
+  <form class="navbar-form navbar-left">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search">
+
+          <div class="input-group-btn">
+            <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+              <i class="caret"></i>
+            </button>
+            <button class="btn btn-default" type="submit">
+              <i class="glyphicon glyphicon-search"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li> <a href="#">Accessories</a> </li>
+              <li> <a href="#">Jackets</a> </li>
+              <li> <a href="#">Jeans</a> </li>
+              <li> <a href="#">Shoes</a> </li>
+              <li> <a href="#">Shirts</a> </li>
+              <li> <a href="#">Watchs</a> </li>
+            </ul>
+          </div>
+          </div>
+        </div>
+</form>
+
+  <br><br><br><br><br>
+<nav class="navbar navbar-inverse">
+  <div class="container-flurd">
+    <div class="navbar-header">
+      <a class="navbar-brand"href="#">Home</a>
+    </div>
+    <ul class ="nav navbar-nav"><th></th>
+      <li class="dropdown"><a class="dropdown-toggle"data-toggle="dropdown"href="#">Service<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Web design</a></li>
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">Development</a></li>
+        </ul>
+
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<br><br><br><br><br>
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Product ID</th>
+        <th>Product Name</th>
+        <th>Product Quantity</th>
+        <th>Product Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="info">
+        <td>1</td>
+        <td>Wheat</td>
+        <td>Good</td>
+        <td>200Bags</td>
+      </tr>
+      <tr class="danger">
+        <td>2</td>
+        <td>Rice</td>
+        <td>Good</td>
+        <td>250 Bags</td>
+      </tr>
+      <tr class="Warning">
+        <td>3</td>
+        <td>Suger</td>
+        <td>Good</td>
+        <td>200 Bags</td>
+      </tr>
+      <tr class="active">
+        <td>3</td>
+        <td>Suger</td>
+        <td>Good</td>
+        <td>200 Bags</td>
+      </tr>
+      <tr class="success">
+        <td>3</td>
+        <td>Suger</td>
+        <td>Good</td>
+        <td>200 Bags</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
